@@ -1,0 +1,17 @@
+
+
+
+.fondo-tst {
+    background: rgb(151, 119, 119);
+    color: white;
+}
+
+
+#header img {
+    max-height: 50px;
+}
+
+.linea-divisoria {
+    /* height: 1px; */
+    background-color: white;
+}
