@@ -18,6 +18,11 @@
     object-fit: cover;
 }
 
+
+#contactanos img {
+    max-height: 400px;
+}
+
 .linea-divisoria {
     /* height: 1px; */
     background-color: white;
