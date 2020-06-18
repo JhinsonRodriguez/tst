@@ -20,10 +20,18 @@
 
 
 #contactanos img {
-    max-height: 400px;
+    /* max-height: 100%; */
+    max-width: 100%;
 }
+
+
+#footer,
+#copyright {
+    background-color: #343a40;
+}
+
 
 .linea-divisoria {
     /* height: 1px; */
-    background-color: white;
+    background-color: rgb(114, 112, 112);
 }
