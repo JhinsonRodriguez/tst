@@ -48,16 +48,102 @@
   }
 
 
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts-socials-media/icomoon.eot?4g6pcd');
+    src:  url('fonts-socials-media/icomoon.eot?4g6pcd#iefix') format('embedded-opentype'),
+      url('fonts-socials-media/icomoon.ttf?4g6pcd') format('truetype'),
+      url('fonts-socials-media/icomoon.woff?4g6pcd') format('woff'),
+      url('fonts-socials-media/icomoon.svg?4g6pcd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-youtube2:before {
+    content: "\ea9e";
+  }
+  
 
+header {
+  background: linear-gradient(to right, #373b44, #4286f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+.main {
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
 
 .fondo-tst {
-    background: rgb(151, 119, 119);
+    background: linear-gradient(to right, #373b44, #4286f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;;
     color: white;
 }
 
 
 #header img {
     max-height: 50px;
+}
+
+.icon-menu {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar {
+  color: white;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  min-width: auto;
+  max-width: 150px;
+  text-align: center;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+  /* background: #373b44; */
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link,
+.navbar-toggler-icon,
+.navbar-toggler {
+  color: white;
 }
 
 /* #main {
@@ -70,15 +156,62 @@
   object-fit: cover;
 }
 
+.productos {
+  margin: 0;
+  padding: 20px 0 0 0;
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.tittleProductos,
+.tittleServicios {
+  color: white;
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.card-body {
+  height: 200px;
+  color: white;
+}
+
+.card-body p {
+  height: 70px;
+}
+
+.servicios {
+  margin: 0;
+  padding: 20px 0 0 0;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-tst {
+  background: linear-gradient(to left, #67b26f, #4ca2cd);
+}
 
 #contactanos i {
   font-size: 30px;
-  color: #343a40;
+  color: linear-gradient(to right, #373b44, #4286f4);
+  color: rgb(54, 111, 197);
 }
 
+.containerTitlePartnerts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2c5364;
+}
+
+.logoPartnerts {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
 
 #contactanos a {
-  color: black;
+  color: linear-gradient(to right, #373b44, #4286f4);
 }
 
 #contactanos img {
@@ -86,6 +219,39 @@
     max-width: 100%;
 }
 
+.redesSociales {
+  margin: 0;
+  padding: 20px 0;
+  height: 120px;
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.redesSociales .col {
+  text-align: center;
+}
+
+.titleRedesSociales {
+  color: white;
+}
+
+.linkRedesSociales {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.redesSociales i {
+  margin: 0 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.partnerts {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+
+}
 
 #footer a {
     color: white;
