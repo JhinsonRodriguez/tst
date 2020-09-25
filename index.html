@@ -16,50 +16,50 @@
     <title>TST - TOTAL SOLUCIONES TECNICAS</title>
     <meta name="description" content="Servicio Técnico especializado.">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="98">
     <!-- Heder -->
-    <header class="header sticky-top">
-      <div class="container-fluid logoTST">
-        <div class="row">
-          <div class="col-8 offset-2 col-sm-12>
-            <a class="logoBrand" href="./index.html">
-              <img class="d-none" src="./assets/images/logo-model.png" alt="tst-logo">
-              <h1 class="titlePrincipal">Total Soluciones Técnicas</h1>
-            </a>
-          </div>
-          <div class="col-1">
-            <button class="navbar-toggler btnMenu" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="icon-menu"></i>
-              <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-          </div>
-            
+    <!-- <div class="container-fluid sticky-top sectionHeader" id="sectionHeader"> -->
+
+      <!-- <div class="row rowHeaderContainer">
+        <div class="col headerContainer">
+          <header class="header"> -->
+            <nav id="navbar" class="navbar navbar-expand-sm menu">
+              <a class="logoTst" href="./index.html">
+                <img class="logoImage" src="./assets/images/logo-model.png" alt="logo-tst" height="60">
+                <h1 class="logoTitle">Total Soluciones Técnicas</h1>
+              </a>
+              <button class="navbar-toggler btnMenu" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon-menu"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item ml-auto mr-auto">
+                    <a class="nav-link" href="#products">Productos</a>
+                  </li>
+                  <li class="nav-item ml-auto mr-auto">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item ml-auto mr-auto">
+                    <a class="nav-link" href="#ofertas">Ofertas</a>
+                  </li>
+                  <li class="nav-item ml-auto mr-auto">
+                    <a class="nav-link" href="#contactanos">Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          <!-- </header>
         </div>
       </div>
-      <nav id="navbar" class="navbar navbar-expand-sm">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="icon-menu"></i>
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item ml-auto mr-auto">
-              <a class="nav-link" href="#productos">Productos</a>
-            </li>
-            <li class="nav-item ml-auto mr-auto">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item ml-auto mr-auto">
-              <a class="nav-link" href="#ofertas">Ofertas</a>
-            </li>
-            <li class="nav-item ml-auto mr-auto">
-              <a class="nav-link" href="#contactanos">Contáctanos</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    </div> -->
+            
+              
+            
+            
+            
   <!-- /Header -->
+
+      
         
 
     <!-- Main -->
@@ -76,22 +76,22 @@
               <div class="carousel-item active">
                 <img src="./assets/images/main1.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h3>Máxima Potencia</h3>
+                  <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/images/main2.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3>Calidad incomparable</h3>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/images/main3.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3>Excelente precisión</h3>
+                  <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
                 </div>
               </div>
             </div>
@@ -113,44 +113,44 @@
 
 
     <!-- Productos -->
-    <section class="productos" id="productos" class="pt-4">
+    <section class="products" id="products">
       <div class="text-center">
-        <h3 class="tittleProductos">Nuestros Productos</h3>
+        <h3 class="titleProducts">Nuestros Productos</h3>
       </div>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
           <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
+            <div class="card cardProductos">
               <img src="./assets/images/image1.png" class="card-img-top" alt="herramientas-industriales">
-              <div class="card-body">
-                <h5 class="card-title">Línea Industrial</h5>
-                <p class="card-text">Gama de equipos con las más altas potencias para el enfoque productivo.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-secondary">Conocer más</a>
+              <div class="card-body cardProductosBody">
+                <h5 class="cardTitle">Línea Industrial</h5>
+                <p class="cardText cardProductosText">Con la serie industrial obtendras el mejor rendimiento y lograrás ejecutar tus proyectos con la mejor eficiencia.</p>
+                <div class="containerbtnModalMasInfo">
+                  <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
+            <div class="card cardProductos">
               <img src="./assets/images/image2.png" class="card-img-top" alt="herramientas-profesionales">
-              <div class="card-body">
-                <h5 class="card-title">Línea Profesional</h5>
-                <p class="card-text">Lograrás un mejor desempeño en tu empresa o taller.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-secondary">Conocer más</a>
+              <div class="card-body cardProductosBody">
+                <h5 class="cardTitle">Línea Profesional</h5>
+                <p class="cardText cardProductosText">Brinda servicios de calidad al utilizar las herramientas que te ayudarán a ser eficaz en los servicios que ofreces.</p>
+                <div class="containerbtnModalMasInfo">
+                  <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-4">
-            <div class="card">
+            <div class="card cardProductos">
               <img src="./assets/images/image3.png" class="card-img-top" alt="herramientas-semi-profesionales">
-              <div class="card-body">
-                <h5 class="card-title">Línea Semi - Profesional</h5>
-                <p class="card-text">Encuentra las herramientas que darán vida a ese proyecto personal que tanto sueñas.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-secondary">Conocer más</a>
+              <div class="card-body cardProductosBody">
+                <h5 class="cardTitle">Línea Semi - Profesional</h5>
+                <p class="cardText cardProductosText">Encuentra la mejor herramienta adecuada para inciar o culminar el proyecto personal que estabas postergando.</p>
+                <div class="containerbtnModalMasInfo">
+                  <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                 </div>
               </div>
             </div>
@@ -169,37 +169,38 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3">
             <div class="col mb-4">
-              <div class="card">
+              <div class="card cardServicios">
                 <img src="./assets/images/image1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Servicio de mantenimiento</h5>
-                  <p class="card-text">Mantenimiento preventivo y correctivo que ralizará un gran cambio a tus equipos como cuando lo adquiriste.</p>
-                  <div class="text-center">
-                    <a href="#" class="btn btn-secondary">Conocer más</a>
+                <div class="card-body cardServiciosBody">
+                  <h5 class="cardTitle">Planes de Mantenimiento</h5>
+                  <p class="cardText cardServiciosText">Con los planes de Mantenimiento Preventivo y/o Correctivo, podrás realizar la ejecución de tus proyectos y obras sin la interrupción o inconvenientes que implica tener una herramienta fuera de servicio.</p>
+                  <div class="containerbtnModalMasInfo">
+                    <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card">
+              <div class="card cardServicios">
                 <img src="./assets/images/image2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Asesoría Comercial</h5>
-                  <p class="card-text">Nos compremetemos a brindarte las mejores alternativas de equipos, herramientas y un plan de mantenimiento...</p>
-                  <div class="text-center">
-                    <a href="#" class="btn btn-secondary">Conocer más</a>
+                <div class="card-body cardServiciosBody">
+                  <h5 class="cardTitle">Asesoría Comercial</h5>
+                  <p class="cardText cardServiciosText">Tienes planes de desarrollo o ejecución de obras de gran magnitud o proyectos empresariales que involucren una serie de herramientas? <br> 
+                  Nosotros te asesoramos en desarrollar un plan de adquisición y mantenimiento para tu proyecto. </p>
+                  <div class="containerbtnModalMasInfo">
+                    <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card">
+              <div class="card cardServicios">
                 <img src="./assets/images/image3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Venta lotizada</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to  additional content.</p>
-                  <div class="text-center">
-                    <a href="#" class="btn btn-secondary">Conocer más</a>
+                <div class="card-body cardServiciosBody">
+                  <h5 class="cardTitle">Venta de Repuestos</h5>
+                  <p class="cardText cardServiciosText">Si deseas adquirir algún repuesto o prefieres que realicemos la evaluación y cambio, puedes contactarnos para solicitar una cotización.</p>
+                  <div class="containerbtnModalMasInfo">
+                    <button type="button" class="btn btn-secondary btnModalMasInfo" data-toggle="modal" data-target="#modalMasInfo">Mas información</button>
                   </div>
                 </div>
               </div>
@@ -211,60 +212,47 @@
 
 
     <!-- Contáctanos -->
-    <section id="contactanos" class="pt-3 pb-3">
+    <section id="contactanos" class="contactanos">
       <h4 class="text-center pt-2 pb-2">Contáctanos</h4>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 text-center">
               <div class="row">
-                <div class="col-12 col-md pt-2 pb-2">
-                  <i class="icon-phone"><br></i><a href="tel:943542522" class="mt-0 mb-0">943542522</a>
+                <div class="col-12 col-md contactanosPhone">
+                  <i class="icon icon-phone"><br></i><a href="tel:943542522" class="numberPhone">943542522</a>
                 </div>
-                <div class="col-12 col-md pt-2 pb-2">
-                  <i class="icon-whatsapp"></i><br><a href="https://api.whatsapp.com/send?phone=51941074646" target="_blank">943542522</a>
+                <div class="col-12 col-md contactanosWhatsapp">
+                  <i class="icon icon-whatsapp"></i><br><a class="whatsapp" href="https://api.whatsapp.com/send?phone=51941074646" target="_blank">943542522</a>
                 </div>
-                <div class="col-12 col-md pt-2 pb-2">
-                  <i class="icon-mail3"></i><br><a href="mailto:info@tst.pe?subject=Título_del_correo" class="mt-0 mb-0">info@tst.pe</a>
+                <div class="col-12 col-md contactanosMail">
+                  <i class="icon icon-mail3"></i><br><a href="mailto:info@tst.pe?subject=Título_del_correo" class="mt-0 mb-0 mail">info@tst.pe</a>
                 </div>
               <!-- <i class="icon-whatsapp"></i><p class="">943542522</p>
               <i class="icon-mail3"></i><p class="">info@tst.pe</p> -->
               </div>
               <div class="direccion-oficina pt-2 pb-2">
-                <i class="icon-home"></i>
-                <h4 class="text-center mt-0 mb-0 h5">Oficina Principal:</h4>
-                  <p class="text-center mt-0 mb-0">Av. José Pardo #1869 - Chimbote<br>
+                <i class="icon icon-home"></i>
+                <h4 class="text-center mt-0 mb-0 h5 contactanosSubTitle">Oficina Principal:</h4>
+                  <p class="text-center address">Av. José Pardo #1869 - Chimbote<br>
                   Santa - Ancash</p>
               </div>
               <div class="horario-de-atencion pt-2 pb-2">
-                <i class="icon-clock"></i>
-                <h4 class="text-center mb-0 mt-0 h6">Horarios de atención:</h4>
-                  <p class="mt-0 mb-0 text-center">Lunes a viernes de 9:00 am - 4:00 pm</p>
-                  <p class="mt-0 mb-0 text-center">Sábados de 9:00 am - 1:00 pm</p>  
+                <i class="icon icon-clock"></i>
+                <h4 class="text-center contactanosSubTitle">Horarios de atención:</h4>
+                  <p class="text-center dateOpen">Lunes a viernes de 9:00 am - 4:00 pm</p>
+                  <p class="text-center dateOpen">Sábados de 9:00 am - 1:00 pm</p>  
               </div>
                 
             </div>
-            <div class="col-sm-12 col-md-6 text-center">
-              <a class="ubicacion_tst" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank"><img src="./assets/images/mapa.png" alt="ubicacion-tst"></a>
+            <div class="col-sm-12 col-md-6 text-center contactanosMapUbication">
+              <a class="linkUbicationTst" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank"><img src="./assets/images/mapa.png" alt="ubicacion-tst" class="imageUbicationTst"></a>
             </div>
           </div>
       </div>
     </section>
     <!-- /Contáctanos -->
 
-    <section class="redesSociales">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h5 class="titleRedesSociales">Síguenos en nuestras redes</h5>
-            <div class="linkRedesSociales">
-              <i class="icon-facebook"></i>
-              <i class="icon-instagram"></i>
-              <i class="icon-youtube2"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
 
     <section class="partnerts">
@@ -276,19 +264,22 @@
           <div class="col-12 logoPartnerts">
             <div class="row">
               <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+                <img class="logoBosch" src="./assets/images/marca_bosch.jpg" width="100" height="70" alt="marcaBosch">
+              </div>
+              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
                 <img src="./assets/images/MarcaDeWalt.png" width="130" height="70" alt="marcaDewalt">
+              </div>
+              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+                <img src="./assets/images/marca_skil.png" width="130" height="70" alt="marcaSkil">
               </div>
               <div class="col-6 col-sm-4 col-md mt-2 mb-2">
                 <img src="./assets/images/marcablackdecker.png" width="130" height="70" alt="marcaB&D">
               </div>
-              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
-                <img src="./assets/images/marca_bosch2.png" width="130" height="70" alt="marcaBosch">
+              <div class="col-6 col-sm-4 offset-sm-0 col-md mt-2 mb-2">
+                <img class="marcaDremel" src="./assets/images/marca_dremel.png" width="130" height="50" alt="marcaDremel">
               </div>
-              <div class="col-6 col-sm-6 col-md mt-2 mb-2">
-                <img src="./assets/images/marca_skil.png" width="130" height="70" alt="marcaSkil">
-              </div>
-              <div class="col-6 offset-3 col-sm-6 offset-sm-0 col-md mt-2 mb-2">
-                <img src="./assets/images/marca_dremel.png" width="130" height="70" alt="marcaDremel">
+              <div class="col-6 col-sm-4 offset-sm-0 col-md mt-2 mb-2">
+                <img src="./assets/images/marca_stanley.jpg" width="130" height="70" alt="marcaStanley">
               </div>
             </div>
           </div>
@@ -324,7 +315,22 @@
     </footer> -->
     <!-- /Footer -->
     
-      
+    <!-- Redes Sociales -->
+    <section class="redesSociales">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5 class="titleRedesSociales">Síguenos en nuestras redes</h5>
+            <div class="linkRedesSociales">
+              <i class="icon-facebook"></i>
+              <i class="icon-instagram"></i>
+              <i class="icon-youtube2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Redes Sociales -->
           
         
 
@@ -350,22 +356,42 @@
     
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modal-quienes-somos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Mas Información-->
+    <div class="modal fade" id="modalMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title mr-auto ml-auto" id="exampleModalLabel">¿Quiénes somos?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Déjanos tus datos y te llamaremos!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
-            <p class="mb-0 mt-0">Nos dedicamos a la asistencia técnica y especialicida en herramientas eléctricas para la construcción.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <p>Hola! <br>
+            Estas solicitando información sobre "<span class="tipoInfo" id="tipoInfo"></span>", por favor déjanos tus datos y uno de nuestros técnicos se contactará contigo para brindarte información y ayuda al respecto. Gracias!</p>
+            <form id="FormSolicitarInfo" action="">
+              <div class="form-group">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escriba su nombre" maxlength="50" autocomplete="off">
+                <small class="msgErrorOK" id="msgErrorInputnombre">Escriba un nombre válido</small>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Escriba su teléfono" maxlength="12" autocomplete="off">
+                <small class="msgErrorOK" id="msgErrorInputtelefono">Escriba un número de teléfono válido</small>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Escriba su correo" maxlength="50" autocomplete="off">
+                <small class="msgErrorOK" id="msgErrorInputcorreo">Escriba un correo válido o solo dejelo vacío</small>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="form-control btn btn-primary">
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    <!-- Modal -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -373,5 +399,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./javascript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </body>
 </html>
