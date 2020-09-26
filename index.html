@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-    <title>TST - TOTAL SOLUCIONES TECNICAS</title>
+    <title>TST | Home</title>
     <meta name="description" content="Servicio Técnico especializado.">
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="98">
-    <!-- Heder -->
+  <body data-target=".navbar" data-offset="57">
+    <!-- Header -->
     <!-- <div class="container-fluid sticky-top sectionHeader" id="sectionHeader"> -->
 
       <!-- <div class="row rowHeaderContainer">
         <div class="col headerContainer">
           <header class="header"> -->
-            <nav id="navbar" class="navbar navbar-expand-sm menu">
+            <nav id="header" class="navbar navbar-expand-lg header">
               <a class="logoTst" href="./index.html">
                 <img class="logoImage" src="./assets/images/logo-model.png" alt="logo-tst" height="60">
                 <h1 class="logoTitle">Total Soluciones Técnicas</h1>
@@ -31,8 +31,8 @@
               <button class="navbar-toggler btnMenu" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="icon-menu"></i>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+              <div class="collapse navbar-collapse menuContainer" id="navbarSupportedContent">
+                <ul class="navbar-nav menu">
                   <li class="nav-item ml-auto mr-auto">
                     <a class="nav-link" href="#products">Productos</a>
                   </li>
@@ -168,7 +168,7 @@
         </div>
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="card cardServicios">
                 <img src="./assets/images/image1.png" class="card-img-top" alt="...">
                 <div class="card-body cardServiciosBody">
@@ -180,7 +180,7 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="card cardServicios">
                 <img src="./assets/images/image2.png" class="card-img-top" alt="...">
                 <div class="card-body cardServiciosBody">
@@ -193,7 +193,7 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-4">
+            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-4">
               <div class="card cardServicios">
                 <img src="./assets/images/image3.png" class="card-img-top" alt="...">
                 <div class="card-body cardServiciosBody">
@@ -213,42 +213,49 @@
 
     <!-- Contáctanos -->
     <section id="contactanos" class="contactanos">
-      <h4 class="text-center pt-2 pb-2">Contáctanos</h4>
+      <h4 class="contactanosTitle">Contáctanos</h4>
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-sm-12 col-md-6 text-center">
-              <div class="row">
-                <div class="col-12 col-md contactanosPhone">
-                  <i class="icon icon-phone"><br></i><a href="tel:943542522" class="numberPhone">943542522</a>
+          <div class="row contactanosBody">
+            <div class="col-sm-12 col-md-6">
+              <div class="row pt-2 pb-2">
+                <div class="col-12 col-sm-4 item">
+                  <a class="linkPhone" href="tel:943542522">
+                    <i class="icon icon-phone"></i>
+                    <p class="data">943542522</p>
+                  </a>
                 </div>
-                <div class="col-12 col-md contactanosWhatsapp">
-                  <i class="icon icon-whatsapp"></i><br><a class="whatsapp" href="https://api.whatsapp.com/send?phone=51941074646" target="_blank">943542522</a>
+                <div class="col-12 col-sm-4 item">
+                  <a class="linkWhatsapp" href="https://api.whatsapp.com/send?phone=51943542522" target="_blank">
+                    <i class="icon icon-whatsapp"></i>
+                    <p class="data">943542522</p>
+                  </a>
                 </div>
-                <div class="col-12 col-md contactanosMail">
-                  <i class="icon icon-mail3"></i><br><a href="mailto:info@tst.pe?subject=Título_del_correo" class="mt-0 mb-0 mail">info@tst.pe</a>
+                <div class="col-12 col-sm-4 item">
+                  <a class="linkEMail" href="mailto:info@tst.pe?subject=Título_del_correo">
+                    <i class="icon icon-mail3"></i>
+                    <p class="data">info@tst.pe</p>
+                  </a>
                 </div>
-              <!-- <i class="icon-whatsapp"></i><p class="">943542522</p>
-              <i class="icon-mail3"></i><p class="">info@tst.pe</p> -->
+                <div class="col-12 item">
+                  <i class="icon icon-home"></i>
+                  <h4 class="subTitle">Oficina Principal:</h4>
+                    <p class="text-center address data">Av. José Pardo #1869 <br> Chimbote - Santa - Ancash</p>
+                </div>
+                <div class="col-12 item">
+                  <i class="icon icon-clock"></i>
+                  <h4 class="text-center subTitle">Horarios de atención:</h4>
+                    <p class="text-center dateOpen data">Lunes a viernes <br> 9:00 am - 4:00 pm</p>
+                    <p class="text-center dateOpen data">Sábados <br> 9:00 am - 1:00 pm</p>  
+                </div>
               </div>
-              <div class="direccion-oficina pt-2 pb-2">
-                <i class="icon icon-home"></i>
-                <h4 class="text-center mt-0 mb-0 h5 contactanosSubTitle">Oficina Principal:</h4>
-                  <p class="text-center address">Av. José Pardo #1869 - Chimbote<br>
-                  Santa - Ancash</p>
-              </div>
-              <div class="horario-de-atencion pt-2 pb-2">
-                <i class="icon icon-clock"></i>
-                <h4 class="text-center contactanosSubTitle">Horarios de atención:</h4>
-                  <p class="text-center dateOpen">Lunes a viernes de 9:00 am - 4:00 pm</p>
-                  <p class="text-center dateOpen">Sábados de 9:00 am - 1:00 pm</p>  
-              </div>
-                
             </div>
-            <div class="col-sm-12 col-md-6 text-center contactanosMapUbication">
-              <a class="linkUbicationTst" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank"><img src="./assets/images/mapa.png" alt="ubicacion-tst" class="imageUbicationTst"></a>
+            <div class="col-sm-12 col-md-6 mapaUbicacion">
+              <a class="linkUbicacionTst" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank">
+                <img class="image" src="./assets/images/mapa.png" alt="ubicacion-tst" class="imageUbicationTst">
+              </a>
             </div>
           </div>
-      </div>
+        </div>
     </section>
     <!-- /Contáctanos -->
 
@@ -263,22 +270,22 @@
           </div>
           <div class="col-12 logoPartnerts">
             <div class="row">
-              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img class="logoBosch" src="./assets/images/marca_bosch.jpg" width="100" height="70" alt="marcaBosch">
               </div>
-              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/MarcaDeWalt.png" width="130" height="70" alt="marcaDewalt">
               </div>
-              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/marca_skil.png" width="130" height="70" alt="marcaSkil">
               </div>
-              <div class="col-6 col-sm-4 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/marcablackdecker.png" width="130" height="70" alt="marcaB&D">
               </div>
-              <div class="col-6 col-sm-4 offset-sm-0 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img class="marcaDremel" src="./assets/images/marca_dremel.png" width="130" height="50" alt="marcaDremel">
               </div>
-              <div class="col-6 col-sm-4 offset-sm-0 col-md mt-2 mb-2">
+              <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/marca_stanley.jpg" width="130" height="70" alt="marcaStanley">
               </div>
             </div>
@@ -336,7 +343,7 @@
 
 
     <!-- Copyright -->
-    <section id="copyright" class="fondo-tst">
+    <section id="copyright" class="fondo-tst copyright">
       <div class="container-fluid">
         <div class="row">
             <div class="col pl-0 pr-0">

@@ -91,57 +91,39 @@
     content: "\ea9e";
   }
   
-.sectionHeader {
-  margin: 0;
-  padding: 0 10px;
-  width: 100%;
-  height: auto;
-  background: linear-gradient(to right, #373b44, #4286f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-}
-
-.rowHeaderContainer {
-  margin: 0;
-  padding: 0;
-  width: inherit;
-  height: inherit;
-  /* background: linear-gradient(to right, #373b44, #4286f4);*/
-}
-
-.headerContainer {
-  margin: 0;
-  padding: 0;
-  width: inherit;
-  height: inherit;
-  /* background: linear-gradient(to right, #373b44, #4286f4); */
-}
 
 .header {
   margin: 0;
   padding: 0;
-  /* background: linear-gradient(to right, #373b44, #4286f4); */
-  width: inherit;
-  height: inherit;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  background: linear-gradient(to right, #373b44, #4286f4);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  display: flex;
+  justify-content: space-between;
 }
 
+
 .logoTst {
+  margin: 0 0 0 10px;
   display: flex;
   align-items: center;
-
 }
 
 
 .logoTitle {
   margin: 0;
   padding: 0;
-  /* width: 250px; */
   height: auto;
   font-size: 18px;
   color: white;
-  /* text-decoration: none; */
 }
+
+.logoTst:hover {
+  text-decoration: none;
+}
+
 
 
 
@@ -166,7 +148,7 @@
 
 
 .btnMenu {
-  margin: 0;
+  margin: 0 10px 0 0;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -175,15 +157,15 @@
   border-radius: 5px;
 }
 
+.btnMenu:focus {
+  outline: 1px;
+}
+
 .icon-menu {
   font-size: 20px;
   color: white;
 }
 
-.navbar {
-  padding: 0;
-  color: white;
-}
 
 .navbar-nav {
   margin: 0 auto;
@@ -265,7 +247,7 @@
 }
 
 .cardProductosBody {
-  height: 200px;
+  height: 250px;
   /* color: white; */
   /* color: rgba(44, 83, 100, 0.8); */
 }
@@ -316,49 +298,87 @@
 
 
 .contactanos {
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 18px 0;
 }
 
+.contactanosTitle {
+  text-align: center;
+  color: #2c5364;
+  font-weight: bold;
+}
 
-.contactanos .icon {
+.contactanosBody {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contactanosBody .item {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contactanosBody .icon {
   font-size: 30px;
-  /* color: linear-gradient(to right, #373b44, #4286f4); */
   color: #2c5364;
 }
 
-.contactanosPhone,
-.contactanosWhatsapp,
-.contactanosMail,
-.contactanosAddress,
-.contactanosDateOpen {
-  margin: 0;
-  padding: 10px 0;
-
+.contactanosBody .linkData {
+  color: rgba(44, 83, 100, 1);
 }
 
-.contactanos .numberPhone,
-.contactanos .whatsapp,
-.contactanos .mail,
-.contactanos .address,
-.contactanos .dateOpen {
+.contactanosBody .subTitle {
   margin: 0;
-  padding: 0;
-  color: #4286f4;
-
+  font-size: 18px;
+  color: rgba(44, 83, 100, 1);
 }
+
+.contactanosBody .data {
+  margin: 0;
+  color: rgba(44, 83, 100, 1);
+}
+
+
+
+.linkWhatsapp:hover,
+.linkPhone:hover,
+.linkEMail:hover {
+  text-decoration: none;
+}
+
 
 .contactanosSubTitle {
   color: 1px solid #2c5364;
 }
 
-.contactanosMapUbication {
-  border: #2c5364;
-  border-radius: 5px;
+.mapaUbicacion {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.linkUbicacionTst {
+  width: 100%;
+}
+
+.contactanos .mapaUbicacion .image {
+    width: 100%;
 }
 
 
-
+.partnerts {
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+}
 
 
 .containerTitlePartnerts {
@@ -370,7 +390,7 @@
 
 .logoPartnerts {
   margin: 0;
-  padding: 20px 0;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -382,14 +402,6 @@
   margin: auto 0;
 }
 
-#contactanos a {
-  color: linear-gradient(to right, #373b44, #4286f4);
-}
-
-#contactanos img {
-    /* max-height: 100%; */
-    max-width: 100%;
-}
 
 .redesSociales {
   margin: 0;
@@ -411,28 +423,19 @@
   text-align: center;
 }
 
+
+
+
 .redesSociales i {
   margin: 0 20px;
   font-size: 30px;
   color: white;
 }
 
-.partnerts {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  height: auto;
 
-}
-
-#footer a {
-    color: white;
-}
-
-
-#footer,
-#copyright {
+.copyright {
     background-color: #343a40;
+    font-size: 12px;
 }
 
 
@@ -450,6 +453,11 @@
   border: 2px solid red;
 }
 
+.inputIncorrect:focus {
+  border: 2px solid red;
+  box-shadow: none;
+}
+
 .msgErrorOK {
   display: none;
 }
@@ -462,4 +470,29 @@
 
 .modal-footer {
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .cardProductosBody {
+    height: 175px;
+  }
+
+  .mapaUbicacion {
+    margin: 0 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 376px) {
+  .cardProductosBody {
+    height: 200px;
+  }
+
+  .mapaUbicacion {
+    margin: 0 10px;
+  }
+
 }
