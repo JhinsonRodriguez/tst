@@ -434,14 +434,15 @@
 
 
 .copyright {
-    background-color: #343a40;
-    font-size: 12px;
+  background-color: #343a40;
+  font-size: 12px;
 }
 
 
 .linea-divisoria {
-    /* height: 1px; */
-    background-color: rgb(114, 112, 112);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(114, 112, 112);
 }
 
 .modal-header {
