@@ -17,9 +17,9 @@
     <meta name="description" content="Servicio Técnico especializado.">
   </head>
 
-  <body data-target=".navbar" data-offset="57">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav id="header" class="navbar navbar-expand-lg header">
-      <a class="logoTst" href="./index.html">
+      <a class="logoTst" href="index.html">
         <img class="logoImage" src="./assets/images/logo-model.png" alt="logo-tst" height="60">
         <h1 class="logoTitle">Total Soluciones Técnicas</h1>
       </a>
@@ -34,21 +34,16 @@
           <li class="nav-item ml-auto mr-auto">
             <a class="nav-link" href="#servicios">Servicios</a>
           </li>
-          <!-- <li class="nav-item ml-auto mr-auto">
-            <a class="nav-link" href="#ofertas">Ofertas</a>
-          </li> -->
           <li class="nav-item ml-auto mr-auto">
             <a class="nav-link" href="#contactanos">Contáctanos</a>
           </li>
+          <li class="nav-item ml-auto mr-auto">
+            <a class="nav-link" href="#ubicanos">Ubícanos</a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </nav> 
             
-              
-            
-            
-               
-        
 
     <!-- Main -->
     <!-- <section> -->
@@ -61,25 +56,22 @@
             <li data-target="#carousel" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="./assets/images/main2.png" class="d-block w-100" alt="herramientas-industriales">
+              <div class="carousel-caption">
+                <h3 class="subTitle">Siente máximo poder en tus manos</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/main3.png" class="d-block w-100" alt="herramientas-profesionales">
+              <div class="carousel-caption">
+                <h3 class="subTitle">Mejora tu productividad</h3>
+              </div>
+            </div>
             <div class="carousel-item active">
-              <img src="./assets/images/main1.png" class="d-block w-100" alt="...">
+              <img src="./assets/images/main1.png" class="d-block w-100" alt="herramientas-semiprofesionales">
               <div class="carousel-caption">
-                <h3>Máxima Potencia</h3>
-                <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/main2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption">
-                <h3>Calidad incomparable</h3>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/main3.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption">
-                <h3>Excelente precisión</h3>
-                <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+                <h3 class="subTitle">Ensénale al mundo tus creaciones</h3>
               </div>
             </div>
           </div>
@@ -94,12 +86,10 @@
         </div>
       </div>
     </main>
-      <!-- </section> -->
-      
-      
+    <!-- </section> -->
     <!-- /Main -->
-
-
+    
+    
     <!-- Productos -->
     <section class="products" id="products">
       <div class="text-center">
@@ -204,48 +194,59 @@
       <h4 class="contactanosTitle">Contáctanos</h4>
         <div class="container">
           <div class="row contactanosBody">
-            <div class="col-sm-12 col-md-6">
-              <div class="row pt-2 pb-2">
-                <div class="col-12 col-sm-4 item">
-                  <a class="linkPhone" href="tel:943542522">
-                    <i class="icon icon-phone"></i>
-                    <p class="data">943542522</p>
-                  </a>
-                </div>
-                <div class="col-12 col-sm-4 item">
-                  <a class="linkWhatsapp" href="https://api.whatsapp.com/send?phone=51943542522" target="_blank">
-                    <i class="icon icon-whatsapp"></i>
-                    <p class="data">943542522</p>
-                  </a>
-                </div>
-                <div class="col-12 col-sm-4 item">
-                  <a class="linkEMail" href="mailto:info@tst.pe?subject=Título_del_correo">
-                    <i class="icon icon-mail3"></i>
-                    <p class="data">info@tst.pe</p>
-                  </a>
-                </div>
-                <div class="col-12 item">
-                  <i class="icon icon-home"></i>
-                  <h4 class="subTitle">Oficina Principal</h4>
-                    <p class="text-center address data">Av. José Pardo #1869 <br> Chimbote - Santa - Ancash</p>
-                </div>
-                <div class="col-12 item">
-                  <i class="icon icon-clock"></i>
-                  <h4 class="text-center subTitle">Horarios de atención</h4>
-                    <p class="text-center dateOpen data">Lunes a viernes <br> 9:00 am - 4:00 pm</p>
-                    <p class="text-center dateOpen data">Sábados <br> 9:00 am - 1:00 pm</p>  
-                </div>
-              </div>
+            <div class="item">
+              <a class="linkPhone" href="tel:943542522">
+                <i class="icon icon-phone"></i>
+                <p class="data">943542522</p>
+              </a>
             </div>
-            <div class="col-sm-12 col-md-6 mapaUbicacion">
-              <a class="linkUbicacionTst" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank">
-                <img class="image" src="./assets/images/ubicacion-tst.png" alt="ubicacion-tst" class="imageUbicationTst">
+            <div class="item">
+              <a class="linkWhatsapp" href="https://api.whatsapp.com/send?phone=51943542522" target="_blank">
+                <i class="icon icon-whatsapp"></i>
+                <p class="data">943542522</p>
+              </a>
+            </div>
+            <div class="item">
+              <a class="linkEMail" href="mailto:info@tst.pe?subject=Título_del_correo">
+                <i class="icon icon-mail3"></i>
+                <p class="data">info@tst.pe</p>
               </a>
             </div>
           </div>
         </div>
     </section>
     <!-- /Contáctanos -->
+
+    <!-- Ubicanos -->
+    <section class="ubicanos" id="ubicanos">
+      <h4 class="ubicanosTitle">Ubícanos</h4>
+        <div class="container-fluid">
+          <div class="ubicanosBody">
+            <div class="item">
+              <i class="icon icon-home"></i>
+              <h4 class="subTitle">Oficina Principal</h4>
+                <p class="text-center address data">Av. José Pardo #1869 <br> Chimbote - Santa - Ancash</p>
+            </div>
+            <div class="item">
+              <i class="icon icon-clock"></i>
+              <h4 class="text-center subTitle">Horarios de atención</h4>
+                <div class="horariosAtencion">
+                  <p class="text-center data">Lunes a viernes <br> 9:00 am - 4:00 pm</p>
+                  <p class="text-center data">Sábados <br> 9:00 am - 1:00 pm</p>  
+                </div>
+            </div>
+            <div class="mapaUbicacion">
+              <img class="image" src="./assets/images/ubicacion-tst.png" alt="ubicacion-tst" class="imageUbicationTst">
+              <div class="linkUbicacionContainer">
+                <a class="btn btn-info linkUbicacion" href="https://maps.app.goo.gl/8ws2thGuKtjnWtxs5" target="_blank">Ver como llegar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
 
 
     <section class="partnerts">
@@ -257,19 +258,19 @@
           <div class="col-12 logoPartnerts">
             <div class="row">
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
-                <img class="logoBosch" src="./assets/images/marca_bosch.jpg" width="70" height="70" alt="marcaBosch">
+                <img class="logoBosch" src="./assets/images/marca_bosch.jpg" width="100" height="70" alt="marcaBosch">
               </div>
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/MarcaDeWalt.png" width="130" height="70" alt="marcaDewalt">
               </div>
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
-                <img src="./assets/images/marca_skil.png" width="130" height="50" alt="marcaSkil">
+                <img src="./assets/images/marca_skil.png" width="130" height="70" alt="marcaSkil">
               </div>
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/marcablackdecker.png" width="130" height="70" alt="marcaB&D">
               </div>
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
-                <img class="marcaDremel" src="./assets/images/marca_dremel.png" width="130" height="30" alt="marcaDremel">
+                <img class="marcaDremel" src="./assets/images/marca_dremel.png" width="130" height="50" alt="marcaDremel">
               </div>
               <div class="col-6 col-sm-4 col-lg-2 mt-2 mb-2">
                 <img src="./assets/images/marca_stanley.jpg" width="130" height="70" alt="marcaStanley">
@@ -312,7 +313,7 @@
         <div class="container-fluid pt-3 pb-3 pl-0 pr-0">
           <div class="row align-items-center">
             <div class="col pl-0 pr-0">
-              <p class="text-center mt-0 mb-0">© <span id="anioCopyright">2020</span> Todos los derechos reservados | Diseñado por Total Soluciones Técnicas</p>
+              <p class="text-center mt-0 mb-0">© <span id="anioCopyright">{{ year }}</span> Todos los derechos reservados | Diseñado por Total Soluciones Técnicas</p>
             </div>
           </div>
         </div>
@@ -327,25 +328,25 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Déjanos tus datos y te llamaremos!</h5>
+            <img class="logoImage" src="./assets/images/logo-model.png" alt="logo-tst" height="40px">
+            <h6 class="modal-title" id="exampleModalLabel">Total Soluciones Técnicas</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Hola! <br>
-            Estas solicitando información sobre "<span class="tipoInfo" id="tipoInfo"></span>", por favor déjanos tus datos y uno de nuestros asesores técnicos se contactará contigo para brindarte información y ayuda al respecto. Gracias!</p>
-            <form id="FormSolicitarInfo" action="">
+            <p>Hola! Por favor déjanos tus datos y uno de nuestros asesores técnicos se contactará contigo para brindarte información y ayuda respecto lo que necesitas. Gracias!</p>
+            <form id="FormSolicitarInfo">
               <div class="form-group">
-                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escriba su nombre" maxlength="50" autocomplete="off">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombres" maxlength="50" autocomplete="off">
                 <small class="msgErrorOK" id="msgErrorInputnombre">Escriba un nombre válido</small>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Escriba su teléfono" maxlength="12" autocomplete="off">
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" maxlength="12" autocomplete="off">
                 <small class="msgErrorOK" id="msgErrorInputtelefono">Escriba un número de teléfono válido</small>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="correo" id="correo" placeholder="Escriba su correo" maxlength="50" autocomplete="off">
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Email" maxlength="50" autocomplete="off">
                 <small class="msgErrorOK" id="msgErrorInputcorreo">Escriba un correo válido o solo dejelo vacío</small>
               </div>
               <div class="form-group">
@@ -364,7 +365,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </body>

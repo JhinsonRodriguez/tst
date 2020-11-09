@@ -94,16 +94,19 @@
 
 .header {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   background: linear-gradient(to right, #373b44, #4286f4);
   color: white;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1020;
   display: flex;
   justify-content: space-between;
 }
 
+.main .subTitle {
+  font-size: 30px;
+}
 
 .logoTst {
   margin: 0 0 0 10px;
@@ -127,12 +130,14 @@
 
 
 
-.logoImageTst {
-  margin: 0;
+.logoImage {
+  margin: 0 5px 0 0;
   padding: 0;
   width: 50px;
   height: 50px;
-  border: 2px solid white;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 55px;
 }
 
 .main {
@@ -247,19 +252,19 @@
 }
 
 .cardProductosBody {
-  height: 250px;
+  height: 225px;
   /* color: white; */
   /* color: rgba(44, 83, 100, 0.8); */
 }
 
 .cardServiciosBody {
-  height: 300px;
+  height: 325px;
   /* color: white; */
   /* color: rgba(44, 83, 100, 0.8); */
 }
 
 .cardServiciosText {
-  height: 168px;
+  height: 200px;
 }
 
 /* .card-body:hover {
@@ -297,51 +302,79 @@
 }
 
 
-.contactanos {
+.contactanosBody {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.contactanos,
+.ubicanos {
   width: 100%;
   height: auto;
   margin: 0;
   padding: 18px 0;
 }
 
-.contactanosTitle {
+.contactanosTitle,
+.ubicanosTitle {
   text-align: center;
   color: #2c5364;
   font-weight: bold;
 }
 
-.contactanosBody {
+.contactanosBody,
+.ubicanosBoby {
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
 
-.contactanosBody .item {
+.contactanosBody .item,
+.ubicanos .item {
+  margin: 0 20px;
   padding: 10px 0;
   text-align: center;
 }
 
-.contactanosBody .icon {
+.contactanosBody .icon,
+.ubicanos .icon {
   font-size: 30px;
   color: #2c5364;
 }
 
-.contactanosBody .linkData {
+/* .contactanosBody .linkData {
   color: rgba(44, 83, 100, 1);
-}
+} */
 
-.contactanosBody .subTitle {
+.ubicanosBody .subTitle {
   margin: 0;
   font-size: 18px;
   color: rgba(44, 83, 100, 1);
 }
 
-.contactanosBody .data {
+.contactanosBody .data,
+.ubicanosBody .data {
   margin: 0;
   color: rgba(44, 83, 100, 1);
 }
 
+.ubicanosBody {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 
+.horariosAtencion {
+  display: flex;
+  justify-content: center;
+}
+
+.horariosAtencion .data {
+  margin: 0 20px;
+}
 
 .linkWhatsapp:hover,
 .linkPhone:hover,
@@ -350,18 +383,45 @@
 }
 
 
-.contactanosSubTitle {
+/* .contactanosSubTitle {
   color: 1px solid #2c5364;
-}
+} */
 
 .mapaUbicacion {
   width: 100%;
-  height: 100%;
+  height: 380px;
   padding: 0;
-  border: 1px solid white;
-  border-radius: 10px;
+  /* border: 1px solid white; */
+  /* border-radius: 10px; */
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 1;
+}
+
+.mapaUbicacion .linkUbicacionContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(197, 246, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapaUbicacion .linkUbicacion {
+  color: white;
+  /* color: #4286f4; */
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mapaUbicacion .image {
+  width: 100%;
+  height: 100%;
 }
 
 .linkUbicacionTst {
@@ -370,6 +430,25 @@
 
 .contactanos .mapaUbicacion .image {
     width: 100%;
+}
+
+
+.prueba {
+  margin-left: 50px;
+  width: 400px;
+  height: 400px;
+  /* background: #4286f4; */
+  background: linear-gradient(to right, #006ab0, #f82020);
+  border-radius: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prueba-logo {
+  color: white;
+  font-size: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -445,9 +524,20 @@
   background-color: rgb(114, 112, 112);
 }
 
+
+
+
+.modal-content {
+
+  /* background: linear-gradient(to right, #373b44, #4286f4); */
+  background: rgb(222,233,239);
+  color: rgb(22,61,108);
+}
+
+
 .modal-header {
-  background: linear-gradient(to right, #373b44, #4286f4);
-  color: white;
+  display: flex;
+  align-items: center;
 }
 
 .inputIncorrect {
@@ -474,17 +564,58 @@
 }
 
 
+@media screen and (min-width: 1200px) {
+  .cardProductosText {
+    height: 72px;
+  }
+
+  .cardProductosBody {
+    height: 200px;
+  }
+
+  .cardServiciosText {
+    height: 170px;
+  }
+
+  .cardServiciosBody {
+    height: 300px;
+  }
+
+  
+
+
+}
+
+
+
+
 
 @media screen and (max-width: 767px) {
   .cardProductosBody {
     height: 175px;
   }
 
-  .mapaUbicacion {
-    margin: 0 10px;
+  .cardServiciosText {
+    height: 120px;
+  }
+
+  .cardServiciosBody {
+    height: 250px;
   }
 
 }
+
+
+@media screen and (max-width: 634px) {
+  .ubicanosBody {
+    display: block;
+  }
+  
+  .horariosAtencion {
+    
+  }
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -492,8 +623,106 @@
     height: 200px;
   }
 
+}
+
+@media screen and (max-width: 422px) {
+  /* .cardProductosText {
+    height: 72px;
+  } */
+
+  /* .cardProductosBody {
+    height: 225px;
+  } */
+
+  .cardServiciosText {
+    height: 170px;
+  }
+
+  .cardServiciosBody {
+    height: 300px;
+  }
+
+}
+
+
+@media screen and (max-width: 405px) {
+  .contactanosBody {
+    display: block;
+  }
+
+  .ubicanos .container-fluid {
+    padding: 0;
+  }
+
+  .horariosAtencion {
+    display: block;
+  }
+
   .mapaUbicacion {
-    margin: 0 10px;
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 406px) {
+  .mapaUbicacion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  /* .cardProductosText {
+    height: 72px;
+  } */
+
+  .cardProductosBody {
+    height: 225px;
+  }
+
+  /* .cardServiciosText {
+    height: 170px;
+  }
+
+  .cardServiciosBody {
+    height: 300px;
+  } */
+
+}
+
+@media screen and (max-width: 339px) {
+  /* .cardProductosText {
+    height: 72px;
+  } */
+
+  /* .cardProductosBody {
+    height: 225px;
+  } */
+
+  .cardServiciosText {
+    height: 190px;
+  }
+
+  .cardServiciosBody {
+    height: 320px;
+  }
+
+}
+
+@media screen and (max-width: 316px) {
+  /* .cardProductosText {
+    height: 72px;
+  } */
+
+  /* .cardProductosBody {
+    height: 225px;
+  } */
+
+  .cardServiciosText {
+    height: 215px;
+  }
+
+  .cardServiciosBody {
+    height: 342px;
   }
 
 }

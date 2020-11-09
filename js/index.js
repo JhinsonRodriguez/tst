@@ -89,14 +89,14 @@ const validateFieldNotRequired = (expressions, input, field)=>{
 };
 
 
-INPUTS_FORM_REQUEST_INFO.forEach( input => {
+// INPUTS_FORM_REQUEST_INFO.forEach( input => {
   
-  input.addEventListener('keyup', validateInputFormRequestInfo);  
-  input.addEventListener('keyup', ()=>{
-    console.log(input);
-  });  
-  input.addEventListener('blur', validateInputFormRequestInfo);  
-});
+//   input.addEventListener('keyup', validateInputFormRequestInfo);  
+//   input.addEventListener('keyup', ()=>{
+//     console.log(input);
+//   });  
+//   input.addEventListener('blur', validateInputFormRequestInfo);  
+// });
 
 
 FORM_REQUEST_INFO.addEventListener('submit', (e)=>{
